@@ -1,8 +1,19 @@
 # Project Book Starter — v0.1.0 preview
 
+**Language / Язык:** [English](README.md) · [Русский](README.ru.md)
+
 A small, experimental starter for turning fragmented project conversations into an authorised, checkable project description. It offers two routes: a conventional specification and a Book-centred route for work with evolving intent. Neither route guarantees a working or well-governed project merely because documents exist.
 
-Requires Python 3.10 or later; uses only the standard library. [Русская версия](README.ru.md). Start with [the runnable walkthrough](docs/QUICKSTART.md) and [the capability status](docs/STATUS.md).
+Requires Python 3.10 or later; uses only the standard library.
+
+| Read in English (default) | Читать по-русски |
+| --- | --- |
+| [Quickstart](docs/QUICKSTART.md) | [Быстрый запуск](docs/QUICKSTART.ru.md) |
+| [Farshmaster](farshmaster/README.md) | [Фаршмастер](farshmaster/README.ru.md) |
+| [Capability status](docs/STATUS.md) | [Статус возможностей](docs/STATUS.ru.md) |
+| [Release notes](RELEASE-NOTES.md) | [Описание выпуска](RELEASE-NOTES.ru.md) |
+
+Other reference documents currently have English text only; this index does not imply a Russian translation of them.
 
 ## Start here
 

@@ -1,6 +1,8 @@
 # Preview quickstart
 
-Requires Python 3.10+; no packages or network requests. Run all commands from the repository root. On Windows, use `python` if that is the name of your Python executable. [Русская версия](QUICKSTART.ru.md).
+**Language / Язык:** [English](QUICKSTART.md) · [Русский](QUICKSTART.ru.md) · [Home / Главная](../README.md)
+
+Requires Python 3.10+; no packages or network requests. Run all commands from the repository root. On Windows, use `python` if that is the name of your Python executable.
 
 ## 1. Mixed input
 

@@ -1,5 +1,7 @@
 # v0.1.0 preview: capability status
 
+**Language / Язык:** [English](STATUS.md) · [Русский](STATUS.ru.md) · [Home / Главная](../README.md)
+
 | Capability | Observed locally | Limit |
 | --- | --- | --- |
 | Mixed-text intake | Reads UTF-8, retains nonblank lines, order, source and hash | Cannot separate multiple ideas on a single line |
@@ -10,4 +12,4 @@
 | Monitoring | Locally checks file presence and declaration freshness | Does not measure useful outcomes; not a continuous service |
 | Basic tests | 9 Farshmaster + 7 monitor tests passed locally | Synthetic cases; not validated on a real project |
 
-This preview does not include an autonomous research centre, an execution graph, Telegram integration, automatic Book amendments or service access. Understanding arbitrary input and closing the loop to a real user outcome remain future work. [Русская версия](STATUS.ru.md).
+This preview does not include an autonomous research centre, an execution graph, Telegram integration, automatic Book amendments or service access. Understanding arbitrary input and closing the loop to a real user outcome remain future work.

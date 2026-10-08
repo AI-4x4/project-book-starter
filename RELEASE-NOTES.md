@@ -1,6 +1,8 @@
 # Project Book Starter v0.1.0 — preview
 
-A bounded first release: Project Book and conventional-specification templates, mixed-text intake via Farshmaster, basic local monitoring, a synthetic example and runnable instructions. [Русская версия](RELEASE-NOTES.ru.md).
+**Language / Язык:** [English](RELEASE-NOTES.md) · [Русский](RELEASE-NOTES.ru.md) · [Home / Главная](README.md)
+
+A bounded first release: Project Book and conventional-specification templates, mixed-text intake via Farshmaster, basic local monitoring, a synthetic example and runnable instructions.
 
 Requires Python 3.10+. No external dependencies, network calls, service startup or model integration.
 
