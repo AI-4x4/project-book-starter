@@ -1,0 +1,4 @@
+{
+  "route": "standard",
+  "max_observation_age_hours": 24
+}

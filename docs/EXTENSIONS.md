@@ -1,0 +1,3 @@
+# Optional extensions — not installed by this starter
+
+Add only when a real need is established: research (primary sources, uncertainty and alternatives); doctrine (situational rules, not execution credentials); advanced monitoring (independent sensors, alerts and checked recovery beyond the included read-only CLI); typed dependency graph (impact *candidates*, not automatic truth); experience (conditions and negative outcomes). Suggested linking fields: source_id, decision_id, action_id, observation_id, timestamp, version and scope. A simple log suffices at first. Neither a graph engine nor an autonomous service is part of this package.

@@ -1,0 +1,5 @@
+# Basic read-only monitor
+
+Copy `templates/common/MONITOR.json` next to the other templates in a **separate project directory**. Set `route` to `standard` or `complex`, and choose a positive freshness limit. From this starter's root run `python3 -m monitoring.basic_monitor /path/to/project`. Nothing is written, scheduled, restarted or sent. For tests: `python3 -m unittest discover -s monitoring -p 'test_*.py'`.
+
+Signals: `OK` means only that a registered file is nonempty; `FAIL` means missing/empty file or invalid binding; `NOT_TESTED` means no independently checked user outcome; `UNKNOWN` means missing or malformed evidence; `STALE` means an explicitly dated declaration expired. To register a declaration, add `"observation": {"at": "2026-10-06T00:00:00Z", "source": "your exact source"}` to `MONITOR.json`. Even a fresh declaration stays `NOT_TESTED`: this monitor cannot authenticate the source, validate the Book's meaning, check owner approval, measure the user's actual outcome or independently observe itself. It has no write/execute credentials. Add actual sensors and an independent watcher only under a separate reviewed mandate.
