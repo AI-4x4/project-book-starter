@@ -1,36 +1,36 @@
-# Запуск preview
+# Preview quickstart
 
-Python 3.10 или новее, без установки пакетов и сетевых запросов. Все команды ниже выполняются из корня репозитория; в Windows используйте `python` вместо `python3`, если так называется установленный Python.
+Requires Python 3.10+; no packages or network requests. Run all commands from the repository root. On Windows, use `python` if that is the name of your Python executable. [Русская версия](QUICKSTART.ru.md).
 
-## 1. Смешанный вход
+## 1. Mixed input
 
 ```sh
 python3 -m farshmaster.core --raw --source-id synthetic --source-role author --project-term "Проект Соседи" examples/fictional-app/mixed-raw.txt
 ```
 
-В результате четыре исходные строки остаются в `categories` с порядком, источником и SHA-256. Первая строка получает кандидата `intention` и `KEYWORD_CANDIDATE` для области проекта. Остальные три строки остаются в `needs_scope_review`; отсутствующее имя проекта не делает строку посторонней. `owner_validation` остаётся `PENDING`, `discarded_fragment_ids` — пустым. Это проверяемый индекс исходного материала, а не автоматически понятый замысел.
+All four original lines remain in `categories`, with order, source and SHA-256. The first line gets an `intention` candidate and a `KEYWORD_CANDIDATE` project-scope mark. The other three remain in `needs_scope_review`; absence of the project's name is not proof of irrelevance. `owner_validation` stays `PENDING`, and `discarded_fragment_ids` stays empty. This is a traceable index, not an automatically understood intent.
 
-## 2. Проверка человеком
+## 2. Human review
 
-Сверьте каждую строку с источником. В вымышленном примере ограничение про отсутствие смартфонов относится к проекту, хотя код этого не распознал. Уточните область строк о компании и цвете у владельца. Файл `examples/fictional-app/intake.jsonl` показывает формат ручной разметки; он сохраняет неопределённость в непроверенных фрагментах.
+Compare each line with its source. In the fictional example, the constraint about neighbours without smartphones concerns the project, although the code misses that connection. Ask the owner about the company and colour lines. The example `intake.jsonl` illustrates manual labels and leaves unreviewed fragments uncertain.
 
 ```sh
 python3 -m farshmaster.core examples/fictional-app/intake.jsonl
 ```
 
-Названия категорий — пример из 12 меток. Назначение категории `decision` не подтверждает полномочия автора; проверка владельцем и принятие замысла выполняются человеком.
+The 12 category names are illustrative. A `decision` label does not attest the author's authority; owner review and acceptance of intent are human steps.
 
-## 3. Проектная Книга или ТЗ
+## 3. Project Book or specification
 
-Создайте отдельную папку проекта вне репозитория и скопируйте туда содержимое `templates/common/` и одной из папок `templates/complex/` или `templates/standard/`. В заполненных документах укажите цель доставки объявлений, источники, принятое решение и проверяемый критерий. Разделите согласованные решения и предложения. Пример разбора находится в `examples/fictional-app/README.md`; реальные соседи и доставка в нём не проверялись.
+Create a separate project directory outside the starter. Copy the contents of `templates/common/` and either `templates/complex/` or `templates/standard/`. Record the notice-delivery goal, sources, accepted decision and observable criterion in the new documents. Separate accepted decisions from proposals. The fictional scenario is explained in `examples/fictional-app/README.md`; no real neighbours or deliveries were tested.
 
 ```sh
 python3 -m monitoring.basic_monitor /path/to/project
 ```
 
-`OK` означает только наличие непустого документа. Для результата монитор вернёт `NOT_TESTED`, пока нет независимой проверки. Свежая декларация об успехе тоже не становится проверенным исходом.
+`OK` attests only that a nonempty document exists. The outcome remains `NOT_TESTED` without independent verification. Even a fresh declaration of success does not become a verified result.
 
-## 4. Базовые проверки
+## 4. Basic checks
 
 ```sh
 python3 checks/check_starter.py
@@ -38,4 +38,4 @@ python3 -m unittest discover -s farshmaster -p 'test_*.py'
 python3 -m unittest discover -s monitoring -p 'test_*.py'
 ```
 
-Ожидается проверка структуры, 9 тестов Фаршмастера и 7 тестов мониторинга. Они проверяют локальные свойства кода, а не полезность технологии на реальном проекте. Сохранение личного сырья в публичном репозитории не является частью этого маршрута.
+These cover structure and 9 + 7 basic local tests, not real-project utility. Storing private raw data in this public repository is not part of the procedure.

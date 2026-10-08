@@ -1,13 +1,13 @@
-# Статус v0.1.0 preview
+# v0.1.0 preview: capability status
 
-| Возможность | Наблюдаемое состояние | Ограничение |
+| Capability | Observed locally | Limit |
 | --- | --- | --- |
-| Приём смешанного текста | Принимает UTF-8, сохраняет непустые строки, порядок, источник и хэш | Не выделяет несколько мыслей внутри одной строки |
-| Категории и область | 12 примерных категорий; явные метки или узкие эвристики; область хранится отдельно | Эвристические метки требуют проверки человеком |
-| Второй проход | Собирает индекс кандидатов цели/результата/проблемы, неизвестного и явно заданных конфликтов | Не синтезирует надёжно целостный замысел |
-| Подтверждение замысла | Предусмотрено в шаблонах | Выполняется владельцем; автоматического утверждения нет |
-| Книга и ТЗ | Два маршрута, шаблоны источников, решений и изменений | Документ сам по себе не подтверждает его применение |
-| Мониторинг | Локально проверяет документы и свежесть декларации | Не измеряет полезный исход, не является постоянным сервисом |
-| Базовые тесты | 9 + 7 тестов проходят | Синтетические случаи; работа на реальном проекте не проверена |
+| Mixed-text intake | Reads UTF-8, retains nonblank lines, order, source and hash | Cannot separate multiple ideas on a single line |
+| Categories and scope | 12 illustrative labels, supplied or narrow heuristic; scope kept separately | Heuristic suggestions need human review |
+| Second pass | Indexes candidate intention/result/problem, unknowns and declared conflicts | Does not reliably synthesise a coherent author intent |
+| Author-intent confirmation | Represented in the templates | Owner-controlled; no automatic acceptance |
+| Book and specification | Two routes with source, decision and change templates | A document does not prove its use |
+| Monitoring | Locally checks file presence and declaration freshness | Does not measure useful outcomes; not a continuous service |
+| Basic tests | 9 Farshmaster + 7 monitor tests passed locally | Synthetic cases; not validated on a real project |
 
-Этот preview не содержит автономного НИЦ, исполнительного графа, интеграции с Telegram, автоматического изменения Книги или доступа к сервисам. Осмысленное извлечение произвольного потока и полный цикл до реального пользовательского результата остаются задачами последующих версий.
+This preview does not include an autonomous research centre, an execution graph, Telegram integration, automatic Book amendments or service access. Understanding arbitrary input and closing the loop to a real user outcome remain future work. [Русская версия](STATUS.ru.md).

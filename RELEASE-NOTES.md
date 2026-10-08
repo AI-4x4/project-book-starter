@@ -1,11 +1,11 @@
 # Project Book Starter v0.1.0 — preview
 
-Первый ограниченный выпуск: шаблоны проектной Книги и ТЗ, разбор смешанного текста Фаршмастером, базовый локальный мониторинг, синтетический пример и команды запуска.
+A bounded first release: Project Book and conventional-specification templates, mixed-text intake via Farshmaster, basic local monitoring, a synthetic example and runnable instructions. [Русская версия](RELEASE-NOTES.ru.md).
 
-Для запуска нужен Python 3.10+. Внешних зависимостей, сетевых запросов, запуска сервисов и подключения модели нет.
+Requires Python 3.10+. No external dependencies, network calls, service startup or model integration.
 
-Проверено: структура пакета; 9 базовых тестов Фаршмастера; 7 базовых тестов мониторинга; запуск обеих CLI на синтетическом материале. Точные контрольные суммы включённых файлов находятся в `RELEASE-MANIFEST.json`.
+Local checks passed: package structure, 9 basic Farshmaster tests, 7 basic monitoring tests, and both CLIs on synthetic inputs. `RELEASE-MANIFEST.json` records the exact file bytes of the *original published v0.1.0 preview*, not later documentation revisions.
 
-Главное ограничение: Фаршмастер пока использует строки и узкие эвристики. Он не понимает надёжно произвольный поток, не утверждает замысел и не пишет в проектную Книгу. Мониторинг не удостоверяет полезный результат. Полный цикл на реальном проекте не испытан, поэтому версия обозначена preview.
+Principal limit: Farshmaster uses lines and narrow heuristics. It cannot reliably understand arbitrary text, approve an author's intent or edit a Project Book. The monitor does not attest useful outcomes. The full loop has not been tested on a real project; this is a preview, not a proven technology.
 
-Материалы содержат только общие шаблоны и вымышленные примеры. Частные переписки, инфраструктурные данные, проектные Книги других проектов и история внутреннего репозитория в пакет не включены.
+The package contains generic templates and fictional examples, not private conversations, infrastructure, other projects' Books or internal-repository history. Documentation corrections after the frozen preview require a separately reviewed release manifest before a new version is claimed.
